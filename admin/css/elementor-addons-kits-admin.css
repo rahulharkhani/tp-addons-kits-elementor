@@ -1,0 +1,256 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ /* Admin Blocks */
+.tp-admin-general-wrapper {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+}
+.tp-admin-general-wrapper .tp-admin-general-inner {
+	max-width: 70em;
+	height: auto;
+	flex: 1 1 70%;
+}
+.tp-admin-general-wrapper .tp-sidebar {
+	flex: 1 1 200px;
+	padding: 20px;
+}
+.tp-admin-block-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: -10px;
+}
+.tp-admin-block-wrapper .tp-admin-block {
+	background-color: #fff;
+	flex: 1 1 auto;
+	min-width: 250px;
+	width: 300px;
+	margin: 10px 10px 25px 10px;
+	box-shadow: 0px 8px 38px 0px rgba(16, 16, 16, 0.07);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.tp-admin-block-wrapper .tp-admin-block.tp-admin-block-banner {
+	padding: 8px;
+}
+
+
+.tp-admin-block-content .ea-button {
+	font-size: 13px;
+	border-radius: 3px;
+	background-image: -webkit-linear-gradient(-169deg, #5ab9ea 0%, rgb(56, 165, 219) 100%);
+	background-image: -ms-linear-gradient(-169deg, rgb(146, 113, 255) 0%, rgb(87, 37, 255) 100%);
+	-webkit-box-shadow: 0px 14px 15px 0px rgba(0, 5, 41, 0.08);
+	box-shadow: 0px 14px 15px 0px rgba(0, 5, 41, 0.08);
+	box-shadow: 0px 14px 15px 0px rgba(0, 5, 41, 0.08);
+	color: #fff;
+	display: inline-block;
+	padding: 12px 22px 14px;
+	text-decoration: none;
+	line-height: 1;
+	transition: all 0.3s;
+}
+.ea-button:hover {
+	opacity: 0.85;
+}
+
+.tp-align-left {
+	text-align: left;
+}
+.tp-admin-block-large,
+.tp-sidebar-widget {
+	background: #fff;
+	margin-bottom: 25px;
+	padding: 1em;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tp-admin-block-header {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	padding: 30px 0 0 25px;
+}
+.tp-admin-block-header-icon {
+	height: 40px;
+	width: 40px;
+	background: #24a8ca2b;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+
+.tp-admin-block-content {
+	overflow: hidden;
+	position: relative;
+	padding: 1em 1.5em 1.5em;
+	background-color: #fff;
+	padding-left: 85px;
+	padding-bottom: 30px;
+	padding-top: 0px;
+}
+.tp-preview-img {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	object-fit: cover;
+	transition: all 0.3s;
+}
+.tp-preview-img:hover {
+	opacity: 0.9;
+}
+.tp-admin-sidebar {
+	flex: 1 1 200px;
+	padding: 20px;
+}
+.tp-sidebar-block {
+	margin: calc(10% + 1.5em) auto;
+}
+.tp-sidebar-block .tp-admin-sidebar-logo {
+	max-width: 250px;
+	display: block;
+	margin: 0 auto;
+}
+.tp-sidebar-block .tp-admin-sidebar-logo > img,
+.tp-sidebar-block .tp-admin-sidebar-logo > svg {
+	width: 100%;
+	display: block;
+	margin: 10px auto;
+}
+.tp-admin-sidebar-cta {
+	text-align: center;
+}
+.tp-admin-sidebar-cta a {
+	font-size: 16px;
+	font-weight: 600;
+	color: #333333;
+	text-decoration: none;
+	text-align: center;
+	margin: 20px auto;
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: 0px 5px 23px 0px rgba(5, 9, 54, 0.12);
+	background: #ffffff;
+	padding: 15px 35px;
+	outline: none;
+	transition: all 0.3s;
+}
+
+
+/* New PT */
+.tp-admin-block-content a {
+	color: #8860d0;
+}
+.tp-admin-block.tp-admin-block-banner {
+	width: 100%;
+}
+.tp-admin-block-contribution .social-icon {
+	margin-top: 20px;
+	font-size: 40px;
+}
+.tp-admin-block-contribution .social-icon a {
+	color: #0073aa;
+}
+.tp-admin-block-review .social-icon {
+	margin-top: 20px;
+	font-size: 40px;
+}
+.tp-admin-block-review i.fa.fa-twitter-square {
+	color: #1da1f2;
+}
+.tp-admin-block-review i.fa.fa-facebook-square {
+	color: #3b5998;
+}
+.tp-admin-block-review i.fa.fa-google-plus-square {
+	color: #dc4a38;
+}
+.tp-admin-block-review i.fa.fa-linkedin-square {
+	color: #0177b5;
+}
+.tp-admin-block-review i.fa.fa-pinterest-square {
+	color: #bd081c;
+}
+
+.tp-admin-block.tp-admin-block-banner {
+	background: radial-gradient(at top center, #0074b8 0%, #4b95b7 100%);
+	padding: 15% 4%;
+	text-decoration: none;
+}
+/*.tp-admin-block.tp-admin-block-banner:hover {
+	opacity: 0.7;
+}*/
+.tp-admin-block.tp-admin-block-banner h1 {
+	margin: 30px 10px;
+}
+.tp-admin-block.tp-admin-block-banner h1,
+.tp-admin-block.tp-admin-block-banner h1 a {
+	font-size: 38px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+.tp-admin-block.tp-admin-block-banner h4 {
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	margin: 30px 10px;
+}
+.tp-admin-block.tp-admin-block-banner p {
+	font-size: 20px;
+	text-align: center;
+	color: #cbcfd0;
+	line-height: 35px;
+}
+
+.tp-admin-block.tp-admin-block-banner p strong {
+	font-weight: bolder;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.tp-elements-page-title .tp-btn-group,
+.tp-elements-page-title p {
+	margin: 0em 10px 1em;
+}
+.tp-settings-tabs {
+	width: 100%;
+	float: left;
+}
+.tp-sidebar {
+	float: left;
+	width: 28%;
+	margin-left: 2%;
+	margin-top: 90px;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 8px 21px 0px rgba(36, 39, 50, 0.08);
+	box-shadow: 0px 8px 21px 0px rgba(36, 39, 50, 0.08);
+	padding-bottom: 50px;
+}
+.tp-admin-block-header-icon img {
+	max-width: 100%;
+}
+.tp-sidebar .tp-admin-block-header {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	padding: 30px 0 0 30px;
+}
+.tp-sidebar .tp-admin-block-content {
+	overflow: hidden;
+	position: relative;
+	padding: 1em 1.5em 1.5em;
+	background-color: #fff;
+	padding-left: 70px;
+	padding-bottom: 30px;
+	padding-top: 0px;
+}
