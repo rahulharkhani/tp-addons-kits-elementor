@@ -12,13 +12,13 @@
 				?>
 				<div class="profile-info-address">
 					<?php if(!empty($settings['email'])) { ?>
-						<p class="front__text-para info-para"><a href="mailto:<?php echo $settings['email']; ?>"><i class="fas fa-envelope front-icons"></i><?php echo $settings['email']; ?></a></p>
+						<p class="front__text-para info-para"><a href="mailto:<?php echo esc_attr($settings['email']); ?>"><i class="fas fa-envelope front-icons"></i><?php echo esc_attr($settings['email']); ?></a></p>
 					<?php } ?>
 					<?php if(!empty($settings['phone'])) { ?>    
-						<p class="front__text-para info-para"><a href="tel:<?php echo $settings['phone']; ?>"><i class="fas fa-mobile front-icons"></i><?php echo $settings['phone']; ?></a></p>
+						<p class="front__text-para info-para"><a href="tel:<?php echo esc_attr($settings['phone']); ?>"><i class="fas fa-mobile front-icons"></i><?php echo esc_attr($settings['phone']); ?></a></p>
 					<?php } ?>
 					<?php if(!empty($settings['location'])) { ?>    
-						<p class="front__text-para info-para"><i class="fas fa-map-marker-alt front-icons"></i><?php echo $settings['location']; ?></p>
+						<p class="front__text-para info-para"><i class="fas fa-map-marker-alt front-icons"></i><?php echo esc_attr($settings['location']); ?></p>
 					<?php } ?>    
 				</div>
 			</div>
@@ -28,12 +28,13 @@
 					echo esc_html( '<h3 class="front__text-header">' . $name . '</h3>' );
 					echo esc_html( '<span class="sub-title-show">' . $position . '</span>' );
 					?>
-					<p class="front__text-para para-below-info"><?php echo $settings['description']; ?></p>
+					<p class="front__text-para para-below-info"><?php echo esc_attr($settings['description']); ?></p>
 					<div class="profile-icons">
 						<div class="elementor-social-icons-wrapper">
 							<?php
 							foreach ($settings['social_icons'] as $index => $item) {
 								$social = str_replace('fa fa-', '', $item['social']);
+								$socialIcon = str_replace('fa fa-', 'fab fa-', $item['social']);
 
 								$link_key = 'link_' . $index;
 
@@ -47,9 +48,9 @@
 									$this->add_render_attribute($link_key, 'rel', 'nofollow');
 								}
 								?>
-								<a class="elementor-icon elementor-social-icon elementor-social-icon-<?php echo $social . $class_animation; ?> elementor-animation-pop" <?php echo $this->get_render_attribute_string($link_key); ?> target="_blank">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-<?php echo esc_attr($social . $class_animation); ?> elementor-animation-pop" <?php echo $this->get_render_attribute_string($link_key); ?> target="_blank">
 									<span class="elementor-screen-only">Facebook</span>
-									<i class="<?php echo str_replace('fa fa-', 'fab fa-', $item['social']); ?>"></i>
+									<i class="<?php echo esc_attr($socialIcon); ?>"></i>
 								</a>
 							<?php } ?>
 						</div>
