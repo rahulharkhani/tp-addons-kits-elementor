@@ -14,7 +14,7 @@
 			<div class="front__bkg-photo">
 				<?php
 				$profileImage = ( !empty( $settings['user_image']['url'] ) ) ? $settings['user_image']['url'] : ELEMENTOR_ADDONS_KITS_URL.'/public/images/user-profile.jpg';
-				echo esc_html( '<img src="' . $profileImage . '" alt="' . $name . '" />' );
+				echo '<img src="' . esc_url( $profileImage ) . '" alt="' . $name . '" />';
 				?>
 			</div>
 			<div class="bottom-bkg-info">
