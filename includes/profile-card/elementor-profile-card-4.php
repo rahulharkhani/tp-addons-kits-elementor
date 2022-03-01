@@ -25,8 +25,8 @@
 			<div class="bottom-bkg-info">
 				<div class="front__text">
 					<?php
-					echo esc_html( '<h3 class="front__text-header">' . $name . '</h3>' );
-					echo esc_html( '<span class="sub-title-show">' . $position . '</span>' );
+					echo '<h3 class="front__text-header">' . $name . '</h3>';
+					echo '<span class="sub-title-show">' . $position . '</span>';
 					?>
 					<p class="front__text-para para-below-info"><?php echo esc_attr($settings['description']); ?></p>
 					<div class="profile-icons">

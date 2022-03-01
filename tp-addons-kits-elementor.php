@@ -42,19 +42,19 @@ define( 'ELEMENTOR_ADDONS_KITS_DOMAIN', 'tp-elementor-addons-kits' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-tp-elementor-addons-kits-activator.php
+ * This action is documented in includes/class-elementor-addons-kits-activator.php
  */
 function activate_elementor_addons_kits() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tp-elementor-addons-kits-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-elementor-addons-kits-activator.php';
 	Elementor_Addons_Kits_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-tp-elementor-addons-kits-deactivator.php
+ * This action is documented in includes/class-elementor-addons-kits-deactivator.php
  */
 function deactivate_elementor_addons_kits() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tp-elementor-addons-kits-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-elementor-addons-kits-deactivator.php';
 	Elementor_Addons_Kits_Deactivator::deactivate();
 }
 
@@ -65,7 +65,7 @@ register_deactivation_hook( __FILE__, 'deactivate_elementor_addons_kits' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-tp-elementor-addons-kits.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-elementor-addons-kits.php';
 
 /*
  * Register the widgtes file in elementor widgtes.

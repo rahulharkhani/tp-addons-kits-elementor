@@ -7,8 +7,8 @@
 				<?php
 				$name = $settings['name'];
 				$position = $settings['position'];
-				echo esc_html( '<h3 class="front__text-header">' . $name . '</h3>' );
-				echo esc_html( '<span class="sub-title-show">' . $position . '</span>' );
+				echo '<h3 class="front__text-header">' . $name . '</h3>';
+				echo '<span class="sub-title-show">' . $position . '</span>';
 				?>
 			</div>
 			<div class="front__bkg-photo">

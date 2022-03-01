@@ -103,24 +103,24 @@ class Elementor_Addons_Kits {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tp-elementor-addons-kits-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-elementor-addons-kits-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tp-elementor-addons-kits-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-elementor-addons-kits-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-tp-elementor-addons-kits-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-elementor-addons-kits-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-tp-elementor-addons-kits-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-elementor-addons-kits-public.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
