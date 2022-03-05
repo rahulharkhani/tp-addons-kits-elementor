@@ -131,7 +131,7 @@ if (!function_exists('elementor_addons_kits_widget_fail_load')) {
 			$message .= '<p>' . sprintf('<a href="%s" class="button-primary">%s</a>', $install_url, __('Install Elementor', ELEMENTOR_ADDONS_KITS_DOMAIN)) . '</p>';
 		}
 
-		echo esc_html( '<div class="error"><p>' . $message . '</p></div>' );
+		echo '<div class="error"><p>' . esc_html(  $message ) . '</p></div>';
 	}
 
 }
@@ -152,7 +152,7 @@ if (!function_exists('elementor_addons_kits_update_notice')) {
 		$upgrade_link = wp_nonce_url(self_admin_url('update.php?action=upgrade-plugin&plugin=') . $file_path, 'upgrade-plugin_' . $file_path);
 		$message = '<p>' . __('<strong>Card Elements</strong> widgets not working because you are using an old version of Elementor.', ELEMENTOR_ADDONS_KITS_DOMAIN) . '</p>';
 		$message .= '<p>' . sprintf('<a href="%s" class="button-primary">%s</a>', $upgrade_link, __('Update Elementor Now', ELEMENTOR_ADDONS_KITS_DOMAIN)) . '</p>';
-		echo esc_html( '<div class="error">' . $message . '</div>' );
+		echo '<div class="error"><p>' . esc_html(  $message ) . '</p></div>';
 	}
 
 }
