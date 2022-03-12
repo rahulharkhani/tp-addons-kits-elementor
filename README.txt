@@ -1,5 +1,5 @@
 === Plugin Name ===
-TP Elementor Addons Kits: rahulharkhani
+TP Elementor Addons Kits
 Donate link: https://thatpeoples.com/
 Tags: Elementor Addons Profile Cards, Elementor Profile Cards, Profile Cards
 Requires at least: 4.0
